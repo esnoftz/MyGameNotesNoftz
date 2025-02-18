@@ -11,6 +11,8 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     // declaring a reference to the GameScene class
     var play: GameScene!
 
@@ -54,7 +56,7 @@ class GameViewController: UIViewController {
     @IBAction func jumpAction(_ sender: UIButton) {
         // using play as the reference to the GameScene class
         // pushes the ball up with a vector force of 1000 when button is pushed
-        play.ball.physicsBody?.velocity.dy = 1000
+        play.ball.physicsBody?.velocity.dy = 600
         
     }
     
